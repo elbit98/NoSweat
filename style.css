@@ -1,0 +1,418 @@
+body {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1; /* ie 6/7 */
+}
+
+
+.thisis {
+    line-height: 1.3;
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+    font-size: 20px;
+    font-family: "OpenSans";
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-block {
+    position: absolute;
+    z-index: 98;
+    left: 0;
+    width: 100%;
+    background-color: rgba(133,185,228,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.leftmenu {
+    padding-left:7%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noswtlogo {
+    border-right: 3px solid black;
+    margin: 10px;
+    padding-right: 20px;
+}
+.americanlogo {
+    margin:  10px;
+}
+.trash {
+    padding-right: 70px;
+    padding-left: 50px;
+}
+.rightmenu {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%;
+}
+.rightmenu li {
+    display: inline-block;
+    font: 600 20px 'Open Sans', sans-serif;
+    color: white;
+    padding-right: 20px;
+}
+.rightmenu a {
+    text-decoration: none;
+    color: white;
+}
+.fa-shopping-cart {
+    font-size: 40px;
+}
+
+.slider {
+    background: black url("img/bg.png") no-repeat center;
+    height: 899px;
+    position: relative;
+}
+
+
+.tech-f {
+    padding: 67px 35px;
+}
+.tech-f h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    background: #0e1555;
+    background: -webkit-linear-gradient(to right, #0e1555, #056ab3);
+    background: linear-gradient(to right, #0e1555, #056ab3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tech-f ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+.tech-f ul > li {
+    display: inline-block;
+    padding-left: 30px;
+}
+.tech-f p {
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Arial Narrow";
+    font-weight: bold;
+    padding-left: 5px;
+}
+.tech-f em {
+    padding-right: 25px;
+}
+.tech-f img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.tech-f em {
+    font-weight: normal;
+}
+
+
+
+.why-we {
+    background: #000;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+}
+.why-we ul {
+    display: table;
+    margin: 0 auto;
+}
+.why-we ul > li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 55px 30px;
+}
+.why-we img {
+    vertical-align: middle;
+}
+.why-we p {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+
+
+
+.game-c {
+    display: flex;
+    background: #f3f3f3;
+    padding: 45px 100px 0 100px;
+}
+.game_Text {
+    width: 39%;
+    padding-left: 100px;
+}
+.game-c h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.075em;
+    background: #0e1555; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0e1555, #056ab3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0e1555, #056ab3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.game-c h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    padding: 10px 0 20px 0;
+}
+.game-c p {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 3px 0;
+}
+.price {
+    color: #056cb6;
+    font-size: 34px;
+    border-left: solid #e1e1e1 5px;
+    padding-left: 20px;
+    margin: 50px 0;
+}
+.gamebutton {
+    display: table;
+    padding: 30px 80px;
+    border: solid #056cb6 3px;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 70px;
+}
+.americanTwo {
+    padding: 50px 0 50px 30px;
+}
+.game_Video {
+    width: 61%;
+    padding: 1%;
+    align-self: center;
+}
+
+.relation {
+    position: relative;
+}
+.relation_ratio {
+    padding-top: 56.25%;
+}
+.relation_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+iframe {
+    border: none;
+}
+
+.UBTP {
+    padding: 100px 11%;
+}
+
+.UBTP h1, .featuredIn h1 {
+    display: table;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.075em;
+    background: #0e1555;
+    background: -webkit-linear-gradient(to right, #0e1555, #056ab3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0e1555, #056ab3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 auto;
+    padding: 40px 0 90px 0;
+}
+.UBTP ul {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: inline-block;
+    align-items: center;
+}
+.point {
+    display: table;
+    margin: 0 auto;
+    padding: 120px 0 50px 0;
+}
+.pointCircle {
+    background-color: #4a91c8;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin: 8px;
+    border-radius: 10px;
+}
+.pointOther {
+    background-color: #0d6cb6;
+}
+
+
+.insta-block {
+    width: 100%;
+    position: relative;
+    font-size: 0;
+    color: white;
+}
+.insta-block > img {
+    width: 100%
+}
+
+
+.nosweatco {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 14%;
+}
+.nosweatco p {
+    font: 36px 'Open Sans ExtraBold',sans-serif;
+    text-align: center;
+}
+
+.nosweatco h5 {
+    text-align: center;
+    font-size: 50px;
+}
+.nosweatco img {
+    width: 12.5%;
+    padding: 0.5%;
+}
+.inst-top, .inst-bot{
+    width: 100%;
+}
+
+
+
+.buy{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.liners{
+    width: 31%;
+    margin: 1%;
+    position: relative;
+    vertical-align: middle;
+    background: black;
+}
+.liners > img {
+    width: 100%
+}
+
+.name {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+.name img {
+    width: 100%
+}
+
+.img-plus  {
+    position: absolute;
+    right: 0;
+    top: 14%;
+    z-index: 9;
+    width: 52%;
+    height: 350px;
+}
+
+.img-plus img {
+    width: 30px;
+}
+
+.bottom-block {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+}
+.liners-text {
+    background: inherit;
+    color: white;
+    font: 500 58px 'ChunkFive';
+    text-align: center;
+}
+.linebot {
+    background: #056ab2;
+    color: white;
+    text-align: center;
+    font: 500 29px 'Open Sans';
+    padding: 10px;
+}
+
+
+
+.delivered {
+    width: 100%;
+    position: relative;
+    background: black;
+    font-size: 0;
+}
+.delivered img {
+    width: 100%
+}
+.delivered-text {
+    width: 100%;
+    position: absolute;
+    top: 33%;
+    text-align: center;
+}
+.delivered-text h2 {
+    text-align: center;
+    color: white;
+    font: 60px 'Open Sans ExtraBold';
+    font-weight: bolder;
+}
+.delivered-text p {
+    text-align: center;
+    color: white;
+    font: 400 20px 'Open Sans';
+}
+.dicon img {
+    width: 8%;
+    padding-top: 20px;
+}
