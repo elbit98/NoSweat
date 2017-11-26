@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('css/BebasNeue_Regular.otf');
+}
+@font-face {
+    font-family: 'BRUSHSTRIKE';
+    src: url('css/Brushstrike.ttf');
+}
+@font-face {
+    font-family: 'ChunkFive Roman';
+    src: url('css/Chunkfive.otf');
+}
+
+
 body {
 
 }
@@ -5,6 +19,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 ul{
@@ -92,9 +107,53 @@ ul li{
 }
 
 .slider {
-    background: black url("img/bg.png") no-repeat center;
-    height: 899px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.sliderblock {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+}
+.sliderblock h1 {
+    font-size: 149px;
+    font-family: "BRUSHSTRIKE", sans-serif;;
+    font-weight: normal;
+    line-height: 0.9;
+    padding-top: 0.5em;
+}
+.sliderblock p {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: "bebas neue", sans-serif;;
+}
+.text-arrows {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.arrows {
+    font-size: 50px;
+    align-self: flex-end;
+}
+.arrows > div {
+    display: inline;
+}
+.arrowLeft {
+    padding-right: 30px;
+    border-right: solid #26286b 1px;
+}
+.arrowRight {
+    padding-left: 40px;
 }
 
 
@@ -186,9 +245,9 @@ ul li{
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 0.075em;
-    background: #0e1555; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0e1555, #056ab3); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0e1555, #056ab3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0e1555;
+    background: -webkit-linear-gradient(to right, #0e1555, #056ab3);
+    background: linear-gradient(to right, #0e1555, #056ab3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -415,4 +474,319 @@ iframe {
 .dicon img {
     width: 8%;
     padding-top: 20px;
+}
+
+
+
+
+footer {
+    background-color: #0d6cb6;
+    color: white;
+}
+
+.fborder {
+    border-bottom: solid #3182c1 1px;
+    padding-bottom: 5px;
+}
+
+.links, .seninks, .contacts {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-box {
+    max-width: 1150px;
+    padding: 60px 30px;
+    margin: 0 auto;
+}
+
+.inboxBlock {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 32px;
+}
+
+.inputdiv h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.inputdiv p {
+    font-size: 14px;
+}
+.inputdiv {
+    display: table;
+    background-color: #0d6cb6;
+    border: solid white 1px;
+    border-radius: 6px;
+    margin-top: 28px;
+}
+input {
+    background-color: #0d6cb6;
+    border: none;
+    color: white;
+    margin: 0 2px;
+    width: 240px;
+}
+form, .send{
+    display: inline-block;
+}
+.send {
+    padding: 9px 20px;
+    color: #0d6cb6;
+    background-color: white;
+}
+.links {
+    padding: 0 32px;
+}
+.links a {
+    color: white;
+    cursor: pointer;
+}
+.links a:hover {
+    color: black;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.links > div {
+    padding-bottom: 13px;
+    font-size: 13px;
+}
+.contacts h1 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+.contacts p {
+    font-size: 13px;
+    letter-spacing: 0em;
+}
+.contacts {
+    padding-left: 32px;
+    width: 50%;
+}
+.contact_info {
+    padding-bottom: 32px;
+}
+.location, .phone, .email {
+    display: inline-block;
+    vertical-align: top;
+}
+.location, .phone {
+    padding-right: 14px;
+}
+.locationPhoneEmail h1 {
+    padding-bottom: 5px;
+}
+.copyright {
+    float: left;
+}
+.insocicons {
+    padding: 28px 0;
+}
+.soclinkicons {
+    float: right;
+}
+.soclinkicons a {
+    color: white;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1060px) {
+
+    .trash {
+        padding-right: 40px;
+        padding-left: 30px;
+    }
+
+    .spisok a {
+        font-size: 15px;
+    }
+
+    .sliderblock h1 {
+        font-size: 113px;
+    }
+
+    .tech-f {
+        text-align: center;
+    }
+
+    .tech-f ul > li {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .why-we {
+        text-align: center;
+    }
+
+    .game_Text {
+        width: 39%;
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+
+    .UBTP ul {
+        text-align: center;
+    }
+
+    .UBTP ul > li {
+        padding-right: 1%;
+    }
+
+    .UBTP h1, .featuredIn h1 {
+        display: table;
+        font-size: 40px;
+    }
+
+    .fborder {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 995px) {
+
+    .trash {
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+
+    .mobile-menu {
+        margin-right: 2%;
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .rightmenu {display: none;}
+
+    .leftmenu {
+        width: 75%;
+    }
+
+    .sliderblock h1 {
+        font-size: 80px;
+    }
+
+    .sliderblock p {
+        font-size: 40px;
+    }
+
+    .slider img {
+        height: 400px;
+    }
+
+    .tech-f ul >  li {
+        padding-left: 0px;
+    }
+
+    .liners-text p {
+        font-size: 15px;
+    }
+
+    .img-plus  {
+        width: 40%;
+        height: 210px;
+    }
+
+    .insta-block {
+        width: 100%;
+        position: relative;
+        font-size: 0;
+        color: white;
+    }
+    .insta-block > img {
+        width: 100%
+    }
+
+    .UBTP {
+        padding: 1px 11%;
+    }
+
+    .UBTP h1 {
+        display: table;
+        font-size: 30px;
+    }
+
+    .dicon img {
+        padding-top: 0px;
+        bottom: 100px;
+    }
+
+    .game-c h1 {
+        font-size: 30px;
+    }
+
+    .gamebutton {
+        padding: 20px 60px;
+        border: solid #056cb6 2px;
+        font-size: 17px;
+    }
+
+    .game-c {
+        background: #f3f3f3;
+        padding: 45px 100px 0 100px;
+    }
+
+}
+
+
+@media only screen and (max-width: 570px) {
+
+    .noswtlogo {
+        border: none;
+    }
+
+    .noswtlogo img {
+        width: 50%;
+    }
+
+    .sliderblock h1 {
+        font-size: 50px;
+    }
+
+    .sliderblock p {
+        font-size: 25px;
+    }
+
+    .tech-f ul > li {
+        padding-left: 30%;
+        text-align: left;
+        width:100%;
+    }
+
+    .thisis p {
+        font-size: 15px;
+    }
+
+    .UBTP h1 {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .delivered-text h2 {
+        font-size: 30px;
+    }
+
+    .img-plus  {
+        width: 40%;
+        height: 150px;
+    }
+
 }
