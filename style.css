@@ -45,14 +45,25 @@ ul li{
 
 
 .thisis {
-    line-height: 1.3;
+    line-height: 65px;
     font-weight: bold;
     color: #fff;
     background: #000;
     font-size: 20px;
     font-family: "OpenSans";
     text-align: center;
-    padding: 10px;
+    letter-spacing: 4px;
+}
+
+
+.container {
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .menu-block {
@@ -61,36 +72,36 @@ ul li{
     left: 0;
     width: 100%;
     background-color: rgba(133,185,228,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
 }
 .leftmenu {
-    padding-left:7%;
-    width: 30%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .noswtlogo {
     border-right: 3px solid black;
-    margin: 10px;
-    padding-right: 20px;
+    margin:0 10px;
+    padding-right:25px;
 }
 .americanlogo {
-    margin:  10px;
+    margin: 15px 0 7px 15px;
 }
+.americanlogo img{
+    width: 200px;
+}
+
 .trash {
-    padding-right: 70px;
-    padding-left: 50px;
+    padding-right: 7%;
 }
+.trash a {
+    font-size: 40px;
+    color: #000;
+}
+
 .rightmenu {
-    width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 2%;
 }
 .rightmenu li {
     display: inline-block;
@@ -112,6 +123,10 @@ ul li{
     justify-content: center;
     align-items: center;
     top: 0;
+}
+
+.slider img {
+    width: 100%;
 }
 
 .sliderblock {
@@ -349,32 +364,33 @@ iframe {
 
 .insta-block {
     width: 100%;
-    position: relative;
-    font-size: 0;
-    color: white;
-}
-.insta-block > img {
-    width: 100%
+    height: 900px;
+    background: url("img/bginst.png") #5f9ecf;
+    background-size: cover;
+    background-position: center;
 }
 
-
-.nosweatco {
-    position: absolute;
-    width: 100%;
+.insta-block-container {
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    top: 14%;
+    color:#fff;
+    padding-top:5%;
 }
-.nosweatco p {
+.insta-block-container p {
+    margin:2% 0 3% 0;
     font: 36px 'Open Sans ExtraBold',sans-serif;
     text-align: center;
 }
 
-.nosweatco h5 {
+.insta-block-container h5 {
     text-align: center;
     font-size: 50px;
 }
-.nosweatco img {
-    width: 12.5%;
+.insta-block-container img {
+    width: 23%;
     padding: 0.5%;
 }
 .inst-top, .inst-bot{
@@ -416,7 +432,7 @@ iframe {
     top: 14%;
     z-index: 9;
     width: 52%;
-    height: 350px;
+    height: 80%;
 }
 
 .img-plus img {
@@ -602,14 +618,13 @@ form, .send{
     display: none;
 }
 
+@media only screen and (max-width: 1900px) {
+}
+
 @media only screen and (max-width: 1060px) {
 
-    .trash {
-        padding-right: 40px;
-        padding-left: 30px;
-    }
 
-    .spisok a {
+    .navigation a {
         font-size: 15px;
     }
 
@@ -655,16 +670,224 @@ form, .send{
 
 }
 
-@media only screen and (max-width: 995px) {
 
+@media only screen and (max-width: 1760px){
+    .container{
+        max-width: 90%;
+    }
     .trash {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .insta-block-container {
+        max-width: 80%;
+    }
+
+    .noswtlogo{
+        margin: 0;
+        border: none;
+        padding-right: 0;
+        width: 50%;
+    }
+    .noswtlogo img{
+        width: 100%;
+    }
+    .leftmenu{
+        width: 45%;
+    }
+    .americanlogo{
+        width: 50%;
+    }
+    .americanlogo img{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+    .rightmenu li {
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+    .why-we {
+        text-align: center;
+    }
+
+    .sliderblock h1 {
+        font-size: 90px;
+    }
+
+    .sliderblock p {
+        font-size: 55px;
+    }
+
+    .insta-block {
+        height: max-content;
+    }
+
+    .insta-block-container {
+        padding-bottom: 5%;
+    }
+
+    .insta-block-container img {
+        width: 31%;
+    }
+
+   .item4, .item8 {
+       display: none;
+   }
+
+    .container{
+        height:65px;
+    }
+    .leftmenu{
+        width: 25%;
+    }
+    .americanlogo{
+        display: none;
+    }
+    .noswtlogo{
+        width: 100%;
+    }
+    .trash a {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1040px)
+
+}
+
+@media only screen and (max-width: 880px) {
+
+
+    .sliderblock h1 {
+        font-size: 80px;
+    }
+
+    .sliderblock p {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 878px) {
+    .leftmenu {
+        padding-left: 1%;
+    }
+
+    .rightmenu li {
         padding-right: 10px;
-        padding-left: 0px;
     }
 
 }
 
+@media only screen and (max-width: 800px) {
+    .liners-text p {
+        font-size: 20px;
+    }
+
+    .insta-block {
+        padding-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 798px) {
+
+    .rightmenu li {
+        padding-right: 3px;
+    }
+
+    .game-c {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+    .game_Video {
+        width: 100%;
+        padding: 0;
+    }
+
+    .game_Text {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .gamebutton {
+        padding: 20px 60px;
+        border: solid #056cb6 2px;
+        font-size: 17px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 670px) {
+    .delivered-text h2 {
+        font: 30px 'Open Sans ExtraBold';
+    }
+}
+
+@media only screen and (max-width: 632px) {
+
+
+    .linebot {
+        font-size: 15px;
+    }
+
+    .liners {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .buy {
+        display: block;
+    }
+
+    .thisis p {
+        font-size: 13px;
+    }
+
+    .gamebutton {
+        padding: 20px 60px;
+        border: solid #056cb6 2px;
+        font-size: 17px;
+        width: 71%;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 995px) {
+
+
+}
+
+@media only screen and (max-width: 813px) {
+
+    .sliderblock p {
+        font-size:25px;
+    }
+
+    .tech-f ul > li {
+        padding-left: 0;
+    }
+}
+
 @media only screen and (max-width: 760px) {
+
+    .noswtlogo img {
+        width: 68%;
+    }
 
     .mobile-menu {
         margin-right: 2%;
@@ -702,7 +925,6 @@ form, .send{
 
     .img-plus  {
         width: 40%;
-        height: 210px;
     }
 
     .insta-block {
@@ -739,13 +961,19 @@ form, .send{
         font-size: 17px;
     }
 
-    .game-c {
-        background: #f3f3f3;
-        padding: 45px 100px 0 100px;
+}
+
+@media only screen and (max-width: 586px) {
+
+    .sliderblock h1 {
+        font-size: 50px;
+    }
+
+    .sliderblock p {
+        font-size: 25px;
     }
 
 }
-
 
 @media only screen and (max-width: 570px) {
 
@@ -785,8 +1013,62 @@ form, .send{
     }
 
     .img-plus  {
-        width: 40%;
-        height: 150px;
+        width: 40%;0
     }
 
 }
+
+@media only screen and (max-width: 520px) {
+    .thisis p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+    .linebot {
+        font-size: 15px;
+    }
+
+    .liners {
+        width: 100%;
+    }
+
+    .buy {
+        display: block;
+    }
+
+
+    .tech-f {
+        padding: 0;
+    }
+
+    .tech-f ul li {
+        padding: 0 0 1% 30%;
+    }
+
+    .why-we ul > li {
+        padding: 55px 0px;
+    }
+
+    .thisis {
+        letter-spacing: 2px;
+        line-height: 26px;
+    }
+
+
+    .thisis p {
+        font-size: 10px;
+    }
+
+    .container {
+        height: 58px;
+    }
+
+    .gamebutton {
+        width: 0%;
+    }
+
+}
+
+
